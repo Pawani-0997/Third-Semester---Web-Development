@@ -35,3 +35,21 @@ function greet(f_name , l_name)
 }
 
 setTimeout(greet , 2000 , "Pawani" , "Dubey");
+
+function menu(x,y)
+{
+  add = x+y ;
+  sub = x-y ;
+  mul = x*y ;
+  div = x/y ;
+
+  console.log(`Addition ${add} Subtraction ${sub} Multiplication ${mul} Division ${div}`);
+
+}
+
+function calculator(callback)
+{
+  callback(4,5);
+}
+
+setTimeout(calculator(menu),4000);
