@@ -5,8 +5,12 @@ console.log("data2");
 
 //f.writeFileSync("Pawani_dub.txt","hello to all , i am pawani dubey")
 //f.writeFileSync("pawani.txt","hello to all, i am pawani dubey");
-f.appendFileSync("pawani.txt","\nupdated data");
+//f.appendFileSync("pawaniNew.txt","\nupdated data");
 //f.unlinkSync("pawani.txt");
+const result = f.readFileSync("pawani.txt")
+console.log(result);//It will return buffer data.
+const data = f.readFileSync("pawani.txt","utf-8")
+console.log(data);//It will print data in human readable form.
 console.log("data3");
 console.log("data4");
 
